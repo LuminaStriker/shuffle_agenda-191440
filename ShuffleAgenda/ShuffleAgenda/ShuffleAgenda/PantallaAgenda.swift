@@ -47,6 +47,7 @@ struct PantallaAgenda: View {
                             .resizable()
                             .frame(width: 75, height: 75)
                     }
+                    .padding(10)
                     .onTapGesture {
                         print("Todavia no se implementa")
                         pantalla_agregar_contacto.toggle()
@@ -64,6 +65,7 @@ struct PantallaAgenda: View {
                             .resizable()
                             .frame(width: 75, height: 75)
                     }
+                    .padding(10)
                     .shadow(color: .black, radius: 1, x: 0, y: 1)
                     .onTapGesture {
                         if contactos_actuales.isEmpty {
