@@ -19,12 +19,10 @@ struct PantallaAgenda: View {
     
     var body: some View {
         ZStack {
-            // Set the background color for the entire view
             Color.purple
                 .ignoresSafeArea()
             
             VStack {
-                // Replace List with ScrollView and LazyVStack
                 ScrollView {
                     LazyVStack(spacing: 20) {
                         ForEach(contactos_actuales) { contacto in
@@ -35,9 +33,9 @@ struct PantallaAgenda: View {
                                 .shadow(color: .black, radius: 1, x: 0, y: 1)
                         }
                     }
-                    .padding(.vertical, 10) // Add vertical padding to the LazyVStack
+                    .padding(.vertical, 10)
                 }
-                .background(Color.purple) // Ensure the ScrollView background is purple
+                .background(Color.purple)
                 
                 HStack {
                     ZStack {
@@ -75,7 +73,7 @@ struct PantallaAgenda: View {
                         }
                     }
                 }
-                .padding(.horizontal) // Add some horizontal padding to the HStack
+                .padding(.horizontal)
                 .background(Color.mint)
             }
         }
